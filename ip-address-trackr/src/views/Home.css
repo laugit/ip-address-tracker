@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+}
+
+.wholepage,
+.home {
+  width: 1440px;
+  overflow-anchor: none;
+}
+
+.wholepage,
+.mobile-wholepage {
+  height: 100vh;
+}
+
+.mobile-wholepage,
+.mobile-home {
+  width: 375px;
+}
+
+.home {
+  height: 250px;
+}
+
+.home,
+.mobile-home {
+  background: url("../assets/pattern-bg.png");
+  display: grid;
+}
+
+.mobile-home {
+  height: 295px;
+}
+
+.mobile-addrdiv {
+  width: 330px;
+}
+
+.addrdiv,
+.mobile-addrdiv {
+  height: 40px;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 90% 10%;
+  border-radius: 10px;
+  border: 5px solid #ffffff00;
+  background-color: #fff;
+}
+
+.addrdiv {
+  width: 33%;
+}
+
+.mobile-addrinfo,
+.addrinfo {
+  justify-self: center;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 3.5%;
+  padding-left: 1%;
+  padding-top: 2%;
+  display: grid;
+  font-family: "Rubik";
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 999;
+}
+
+.mobile-addrinfo {
+  grid-template-rows: 24% 24% 24% 24%;
+  width: 340px;
+  height: 50vh;
+  margin-top: 8%;
+  justify-content: center;
+}
+
+.addrinfo {
+  grid-template-columns: 20% 1px 23% 1px 21% 1px 21%;
+  width: 60%;
+  height: 90px;
+  justify-content: space-evenly;
+}
+
+.ip,
+.location,
+.timezone,
+.isp,
+.mobile-ip,
+.mobile-location,
+.mobile-timezone,
+.mobile-isp {
+  height: 50%;
+  display: grid;
+}
+
+.mobile-ip,
+.mobile-location,
+.mobile-timezone {
+  align-self: center;
+}
+
+.mobile-isp {
+  align-self: start;
+}
+
+.separator {
+  height: 100%;
+  background: linear-gradient(
+    #fff 10%,
+    hsla(0, 0%, 59%, 0.3) 10%,
+    hsla(0, 0%, 59%, 0.3) 65%,
+    #fff 65%
+  );
+}
+
+.iptitle,
+.loctitle,
+.timetitle,
+.isptitle,
+.mobile-iptitle,
+.mobile-loctitle,
+.mobile-timetitle,
+.mobile-isptitle {
+  min-height: 24px;
+  margin: 0;
+  color: hsl(0, 0%, 59%);
+}
+
+.mobile-iptitle,
+.mobile-loctitle,
+.mobile-timetitle,
+.mobile-isptitle {
+  text-align: center;
+}
+
+.mobile-isptitle {
+  margin-top: 5%;
+}
+
+.ipaddr,
+.loccontent,
+.timecontent,
+.ispcontent,
+.mobile-ipaddr,
+.mobile-loccontent,
+.mobile-timecontent,
+.mobile-ispcontent {
+  margin: 0;
+  font-size: 18px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 500;
+}
+
+.mobile-ispcontent {
+  margin-top: -1.5%;
+}
+
+.ipaddr,
+.loccontent,
+.timecontent,
+.ispcontent {
+  width: 85%;
+}
+
+.mobile-ipaddr,
+.mobile-loccontent,
+.mobile-timecontent,
+.mobile-ispcontent {
+  text-align: center;
+  width: 330px;
+}
+
+.addrinput {
+  color: hsl(0, 0%, 17%);
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.addrsearch {
+  background-color: #000;
+  box-shadow: 0 0 0 5px #000;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  display: grid;
+}
+
+.addrsearch:hover {
+  background-color: hsl(0, 0%, 17%);
+  box-shadow: 0 0 0 5px hsl(0, 0%, 17%);
+}
+
+.arrow {
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.title,
+.mobile-title {
+  color: #fff;
+  font-family: "Rubik";
+  font-weight: 500;
+  text-align: center;
+}
+
+.mobile-title {
+  max-width: 375px;
+  font-size: 26px;
+}
+
+#result {
+  height: calc(100vh - 50px);
+}
