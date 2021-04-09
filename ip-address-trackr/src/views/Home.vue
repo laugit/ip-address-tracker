@@ -127,7 +127,6 @@ export default {
       currenttimezone: "",
       currentISP: "",
       isMobile: window.innerWidth < 376,
-      isFixed: false
     };
   },
   methods:{
@@ -165,12 +164,6 @@ export default {
           this.currentip = res.data.ip;
           this.currentloc = res.data.location;
           map.setView([res.data.location.lat, res.data.location.lng],13);
-          if(!this.isFixed){
-            //document.querySelector('.mobile-addrdiv').classList.add('fixed');
-            //document.querySelector('.addrinfo').classList.add('fixed');
-            this.isFixed = true;
-          }
-          //TODO store true in a variable if fixed then on resize check if fixed
           L.marker([res.data.location.lat, res.data.location.lng]).addTo(map);
           this.currenttimezone = res.data.location.timezone;
           this.currentISP = res.data.isp;
